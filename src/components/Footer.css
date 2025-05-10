@@ -1,0 +1,248 @@
+.footer {
+  background: #0A2463;
+  color: #fff;
+  padding: 48px 0 0 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.footer-col {
+  flex: 1 1 220px;
+  min-width: 220px;
+  margin-bottom: 32px;
+}
+
+.brand-info .footer-hotel-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
+
+.footer-contact div {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-section-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+}
+
+.footer-links-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 18px;
+}
+
+.footer-links-grid a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.footer-links-grid a:hover {
+  color: #D4AF37;
+  text-decoration: underline;
+}
+
+.footer-news-desc {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #e0e0e0;
+}
+
+.footer-news-form {
+  display: flex;
+  gap: 0;
+  margin-bottom: 8px;
+}
+
+.footer-news-form input[type="email"] {
+  padding: 0.7em 1em;
+  border: none;
+  border-radius: 24px 0 0 24px;
+  font-size: 1rem;
+  outline: none;
+  width: 60%;
+  min-width: 120px;
+}
+
+.footer-news-form button {
+  padding: 0.7em 1.5em;
+  border: none;
+  border-radius: 0 24px 24px 0;
+  background: #D4AF37;
+  color: #0A2463;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.footer-news-form button:hover {
+  background: #fff;
+  color: #0A2463;
+}
+
+.footer-news-msg {
+  font-size: 0.95rem;
+  color: #FFD700;
+  margin-top: 4px;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.footer-social-icons a {
+  color: #fff;
+  font-size: 1.3rem;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.footer-social-icons a:hover {
+  color: #D4AF37;
+  transform: scale(1.15);
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid #2d4379;
+  margin: 0 0 16px 0;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px 24px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.98rem;
+  color: #e0e0e0;
+}
+
+.footer-legal-links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-legal-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-legal-links a:hover {
+  color: #D4AF37;
+  text-decoration: underline;
+}
+
+.scroll-to-top {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 9999;
+    background: #D4AF37;
+    color: #9370db;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 2.7rem;
+    box-shadow: 0 12px 40px rgba(80, 40, 120, 0.28);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+    opacity: 1;
+    outline: none;
+    border: 5px solid #fff;
+    animation: scrollTopPulse 1.5s infinite;
+  }
+  
+  @keyframes scrollTopPulse {
+    0% { box-shadow: 0 0 0 0 rgba(212,175,55,0.5);}
+    70% { box-shadow: 0 0 0 18px rgba(212,175,55,0);}
+    100% { box-shadow: 0 0 0 0 rgba(212,175,55,0);}
+  }
+  
+  .scroll-to-top:hover {
+    background: #fff;
+    color: #9370db;
+    border-color: #D4AF37;
+    transform: scale(1.15);
+    box-shadow: 0 16px 48px rgba(80, 40, 120, 0.32);
+  }
+
+  .fa-arrow-up{
+    font-size: 1.5rem;
+  }
+
+
+  
+  @media (max-width: 600px) {
+    .scroll-to-top {
+      right: 10px;
+      bottom: 10px;
+      width: 56px;
+      height: 56px;
+      font-size: 1.7rem;
+      border-width: 3px;
+    }
+  }
+
+@media (max-width: 900px) {
+  .footer-container {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .footer-col {
+    flex: 1 1 45%;
+    min-width: 200px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 0;
+    padding: 0 8px;
+  }
+  .footer-col {
+    min-width: 0;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .footer-bottom {
+    padding: 12px 8px 18px 8px;
+    font-size: 0.93rem;
+  }
+}

@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Poppins:wght@600;700&display=swap');
+
+.aboutus-section {
+  background: #faf9ff;
+  padding: 80px 0 80px 0;
+  width: 100%;
+  color: #111;
+}
+
+.aboutus-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  padding: 0 24px;
+}
+
+.aboutus-content {
+  flex: 1 1 400px;
+  min-width: 320px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.aboutus-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #6b4e8f;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
+
+.aboutus-divider {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 10px;
+}
+
+.aboutus-icon {
+  font-size: 1.5rem;
+  color: #ffb84d;
+}
+
+.aboutus-line {
+  display: inline-block;
+  height: 2px;
+  width: 60px;
+  background: linear-gradient(90deg, #ffb84d 0%, #9370db 100%);
+  border-radius: 2px;
+}
+
+.aboutus-subheading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 18px;
+}
+
+.aboutus-desc {
+  font-family: 'Lora', serif;
+  font-size: 1.08rem;
+  color: #444;
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.aboutus-image-area {
+  flex: 1 1 320px;
+  min-width: 260px;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.aboutus-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(80, 40, 120, 0.10);
+  object-fit: cover;
+}
+
+.aboutus-stats {
+  margin-top: 10px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutus-stat-number {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: #9370db;
+  font-weight: 700;
+  background: #f8f5ff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(147, 112, 219, 0.07);
+}
+
+/* Fade-in animation */
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(.4,0,.2,1), transform 0.8s cubic-bezier(.4,0,.2,1);
+}
+.fade-in-on-scroll.visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (max-width: 900px) {
+  .aboutus-container {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 10px;
+  }
+  .aboutus-content, .aboutus-image-area {
+    max-width: 100%;
+    min-width: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .aboutus-heading {
+    font-size: 2rem;
+  }
+  .aboutus-subheading {
+    font-size: 1.1rem;
+  }
+}
+
+.aboutus-heading,
+.aboutus-subheading,
+.aboutus-desc {
+  color: #111;
+}
+
+.aboutus-main-flex {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  padding: 0 24px;
+}
+
+@media (max-width: 900px) {
+  .aboutus-main-flex {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 10px;
+    align-items: center;
+  }
+}
+
+.amenities-section {
+  margin-top: 64px;
+  background: #f4f6fa;
+  border-radius: 18px;
+  padding: 48px 24px 32px 24px;
+  box-shadow: 0 4px 24px rgba(80, 40, 120, 0.06);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.amenities-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #6b4e8f;
+  margin-bottom: 32px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .amenities-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .amenities-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+
+.amenity-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(80, 40, 120, 0.07);
+  padding: 32px 20px 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: box-shadow 0.25s, transform 0.25s;
+  cursor: pointer;
+  min-height: 220px;
+}
+.amenity-card:hover {
+  box-shadow: 0 8px 32px rgba(80, 40, 120, 0.13);
+  transform: translateY(-6px) scale(1.03);
+}
+.amenity-icon {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.amenity-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #4A89DC;
+  margin-bottom: 8px;
+}
+.amenity-desc {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+} 

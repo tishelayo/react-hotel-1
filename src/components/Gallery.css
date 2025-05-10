@@ -1,0 +1,239 @@
+.gallery-section {
+  background: #faf9ff;
+  padding: 64px 0 48px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 100;
+}
+
+.gallery-header {
+  max-width: 700px;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.gallery-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #0A2463;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-subheading {
+  font-family: 'Lora', serif;
+  font-size: 1.5rem;
+  color: #6b4e8f;
+  margin-bottom: 1rem;
+}
+
+.gallery-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.gallery-cta {
+  background: #D4AF37;
+  color: #0A2463;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.8em 2.2em;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(212,175,55,0.12);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.gallery-cta:hover {
+  background: #bfa134;
+  color: #fff;
+  transform: translateX(4px) scale(1.04);
+}
+
+.gallery-cta .arrow {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.gallery-cta:hover .arrow {
+  transform: translateX(6px);
+}
+
+.gallery-carousel {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 1.5rem auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 32px; /* Side padding for desktop */
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  color: #0A2463;
+  border: 2px solid #D4AF37;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.7rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(10,36,99,0.08);
+  transition: background 0.2s, color 0.2s, border 0.2s, transform 0.2s;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.carousel-arrow.left {
+  left: 0;
+}
+
+.carousel-arrow.right {
+  right: 0;
+}
+
+.carousel-arrow:hover {
+  background: #D4AF37;
+  color: #fff;
+  border: 2px solid #0A2463;
+  transform: scale(1.08) translateY(-50%);
+}
+
+.carousel-images {
+  display: flex;
+  gap: 32px;
+  width: 100%;
+  justify-content: center;
+  transition: transform 0.5s cubic-bezier(.4,0,.2,1);
+  box-sizing: border-box;
+  padding: 0 16px; /* Padding inside the image row */
+}
+
+.carousel-img-wrapper {
+  width: 350px;
+  max-width: 90vw;
+  height: 230px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(10,36,99,0.10);
+  background: #fff;
+  transition: transform 0.5s cubic-bezier(.4,0,.2,1), box-shadow 0.3s;
+  flex: 0 0 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s cubic-bezier(.4,0,.2,1), box-shadow 0.3s;
+}
+
+.carousel-img-wrapper:hover .carousel-img {
+  transform: scale(1.06);
+  box-shadow: 0 8px 32px rgba(212,175,55,0.18);
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  outline: none;
+}
+
+.carousel-dot.active {
+  background: #D4AF37;
+}
+
+@media (max-width: 1100px) {
+  .gallery-carousel {
+    max-width: 900px;
+    padding: 0 16px;
+  }
+  .carousel-img-wrapper {
+    width: 260px;
+    height: 170px;
+    flex: 0 0 260px;
+  }
+}
+
+@media (max-width: 900px) {
+  .gallery-carousel {
+    max-width: 600px;
+    padding: 0 8px;
+  }
+  .carousel-img-wrapper {
+    width: 180px;
+    height: 120px;
+    flex: 0 0 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-header {
+    padding: 0 0.5rem;
+  }
+  .gallery-carousel {
+    max-width: 98vw;
+    padding: 0 2vw;
+  }
+  .carousel-images {
+    gap: 8px;
+    padding: 0 2vw;
+  }
+  .carousel-img-wrapper {
+    width: 92vw;
+    height: 48vw;
+    min-width: 0;
+    border-radius: 10px;
+    flex: 0 0 92vw;
+  }
+  .carousel-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+  }
+  .gallery-title {
+    font-size: 1.2rem;
+  }
+  .gallery-subheading {
+    font-size: 1rem;
+  }
+  .gallery-desc {
+    font-size: 0.95rem;
+  }
+} 
