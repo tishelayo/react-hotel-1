@@ -96,7 +96,7 @@ export default function Footer() {
       </div>
       <hr className="footer-divider" />
       <div className="footer-bottom">
-        <div>© {new Date().getFullYear()} Hiroto Hotel. All rights reserved.</div>
+        <div>© {new Date().getFullYear()} Alatishe. All rights reserved.</div>
         <div className="footer-legal-links">
           <a href="#privacy">Privacy Policy</a>
           <span>|</span>
