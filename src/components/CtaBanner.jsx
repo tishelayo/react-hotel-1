@@ -1,5 +1,5 @@
 import React from 'react';
-import './CTABanner.css';
+import './CtaBanner.css';
 
 const CTABanner = () => (
   <section className="cta-banner">
