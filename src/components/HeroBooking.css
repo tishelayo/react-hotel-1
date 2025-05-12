@@ -4,7 +4,7 @@
   position: relative;
   color: #fff;
   min-height: 600px;
-  background: url('./hero-back.jpg') no-repeat;
+  background: url('../assets/hero-back.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   z-index: 1;
